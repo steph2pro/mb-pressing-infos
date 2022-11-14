@@ -1,0 +1,35 @@
+:root{
+	--blue: dodgerblue;
+	--blanck: white;
+}
+.slider{
+	height: 50vh;
+	position: relative;
+}
+.slider img{
+	object-fit: cover;
+	height: 60vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+.slider .active{
+	opacity: 1;
+}
+.suivant,.precedent{
+	color: var(--blanck);
+	font-size: 3rem;
+	position: absolute;
+	top: 55%;
+	margin-left: 40px;
+	transform: translate(-50%);
+}
+.precedent{
+	right: 0rem;
+}
+.suivant:hover,.precedent:hover{
+	cursor: pointer;
+}

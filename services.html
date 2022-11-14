@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MB-Pressing</title>
+	<link rel="stylesheet" type="text/css" href="./style/menu.css">
+	<link rel="stylesheet" type="text/css" href="./style/footer.css">
+	<link rel="stylesheet" type="text/css" href="./style/section.css">
+	<link rel="stylesheet" type="text/css" href="./style/slider.css">
+
+	
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+	<script type="text/javascript" src="./script/slider.js" defer></script>
+	<script type="text/javascript" src="./script/menu.js" defer></script>
+	<script type="text/javascript" src="./script/app.js" defer></script>
+</head>
+<body>
+	<!--MENUE !-->
+	<label for="ch" id="lab"></label>
+	<input type="checkbox" id="ch">
+	<nav>
+		<a href="index.html" class="log"><img src="./images/logo.jpg" class="logo"> <b class="textlogo">MB Pressing</b> </a>
+		<a href="index.html"><ion-icon name="home"></ion-icon>Accueil</a>
+		<a href="apropos.html"><ion-icon name="body-outline"></ion-icon>A Propos</a>
+		<a href="services.html"><ion-icon name="bag-check"></ion-icon>Nos Services</a>
+		<a href="contacter.html"><ion-icon name="call"></ion-icon>contact</a>
+		<a href="login.php"><ion-icon name="boat-outline"></ion-icon> Espace Admin</a>
+	</nav>
+	<section>
+		<div>
+			
+                <div>
+                	<div class="zoom">
+	                <img src="./images/c.jpg" class="im" class="img1">
+	                </div> 
+                </div>
+		</div>
+   		 
+        <!-- slider d'images !-->
+
+		<div class="slider">
+		<img src="./images/hab.jpg" class="image_slider active">
+		<img src="./images/hab1.jpg" class="image_slider">
+		<img src="./images/hab2.jpg" class="image_slider">
+		<img src="./images/hab3.jpg" class="image_slider">
+		<img src="./images/hab4.jpg" class="image_slider">
+		<img src="./images/hab5.jpg" class="image_slider">
+		<img src="./images/hab6.jpg" class="image_slider">
+		<div class="suivant">
+			<ion-icon name="chevron-back-circle-sharp"></ion-icon>
+		</div>
+		<div class="precedent"><ion-icon name="chevron-forward-circle-sharp"></ion-icon>
+		</div>
+	</div>
+
+		
+        <div id="service">
+            <h3 style="margin-top: 15%">Nos services</h3>
+            <div class="third">
+                <div class="txt ">
+                    <p>
+                        Nous adaptons nos prestations en fonction de vos besoins.</br>
+                        •	Ramassage : (bureaux, hôtels, domiciles…)</br>
+                        •	Notre atelier de pressing est spécialisé dans le nettoyage à sec des vêtements délicats.</br>
+                        •	Repassage : Soucieux de la qualité de nos services, nous réalisons le repassage et le pliage de linge.</br>
+                        •	Amidonnage (Nous traitons ainsi rideaux, housses de canapé, couettes, linge de lit, chemises et costumes, robe de mariée, moquette …)</br>
+                        •	Notre équipe effectue aussi de la livraison à domicile de votre linge dans les meilleurs délais
+
+                    </p>
+                   
+                </div>
+                <div>
+                	<div class="zoom">
+	                <img src="./images/b.jpg" class="im">
+	                </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+		<div class="footer">
+			
+			
+			<div class="formulaire">
+				<h2>contactez nous!</h2>
+				<form action="#" method="POST">
+					
+				
+				<p>
+					<input type="text" placeholder="votre email" name="email" id="email">
+				</p>
+				<p>
+					<input type="text" placeholder="sujet" name="sujet" id="sujet">
+				</p>
+				<p>
+					<textarea placeholder="message" id="message" name="message"></textarea>
+				</p>
+				<p>
+					<button id="btn">envoyer</button>
+				</p>
+				<div class="attention">veuillez entrer tout les champs</div>
+				<div class="success">votre message a ete envoyer avec success!</div>
+				<div class="erreur">une erreur est survenue l'ors de l'envoie de votre message</div>
+			</form>
+			</div>
+			<div class="icons">
+				<h2>rejoignez nous!</h2>
+				<p><ion-icon name="heart-outline logo-faceboock"></ion-icon> facebock</p>
+				<p><ion-icon name="logo-whatsapp"></ion-icon>whatsapp</p>
+				<p><ion-icon name="logo-twitter"></ion-icon>twiter</p>
+			</div>
+		</div>
+		<div class="locdiv" style="margin-top: -3%">
+			<!--****************** integration de la carte du cameroun de google maps ****************************!-->
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8103859.369621319!2d7.7960158168310425!3d7.358091127226029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613753703e0f21%3A0x2b03c44599829b53!2sCameroun!5e0!3m2!1sfr!2scm!4v1660077801862!5m2!1sfr!2scm" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         	</div>
+	</footer>
+
+</body>
+</html>
