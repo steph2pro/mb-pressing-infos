@@ -19,44 +19,79 @@
     src: url(Merriweather-Regular.ttf);
 }
 .img1{
-	width: 100%;
-	height: 85vh;
+    width: 100%;
+    height: 85vh;
 }
+/* annimation du test img */
 div .mots{
-	position: absolute;
-	font-size: 45px;
-	font-weight: 600;
-	color: var(--blanck);
-	margin: -400px 50px;
-
+    position: absolute;
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--blanck);
+    margin: -400px 235px;
+    animation-duration: 3s;
+    animation-name: stephane;
+    animation-iteration-count: 2;
+}
+@keyframes stephane{
+    from{
+        margin-left: 0px;
+        
+    }
+    to{
+         margin-left: 235px;
+        
+    
+    }
 }
 .im{
     width: 200%;
 }
+    
+.service img{
+    margin: 10% 40%;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
 
-#accueil, #service, #present, #infos{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+
+    .btn1{ 
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        margin: 400px -50%;
+        background-color: transparent;
+        color: var(--blanck);
+        border-radius: 25px;
+        font-size: 22px;
+        padding: 15px;
+        border: solid 2px var(--blanck);
+
+    }
+.txt{
+    background-color: var(--blanck);
+    box-shadow:15px 12px 13px 12px var(--blue2) ;
+    border-radius: 15px;
+    width: 50%;
+    padding:0px 20px;
 }
-.second, .fourth,.third, .first{
-    display: flex;
-    margin: 20px 0;
-    width: 100%;
-    height: max-content;
-    background-color:var(--blue2);
-    padding: 35px;
+.contentImages{
+    margin-left: 30px;
+    width: 50%;
 }
-.second img,.fourth img,.third img,.first img{
-    margin-left: 5%;
-    width: 100%;
-    height: 50vh;
-    border-radius: 10px;
+.zoom img{
+    height: 70vh;
 }
 .txt p{
+    margin-top: 1%;
     width: 100%;
     text-align: justify;
-    margin-left: 20px;
+}
+p img{
+    width: 3%;
+    height: 3%;
 }
 h3{
     color: dodgerblue;
@@ -67,19 +102,6 @@ h3{
     text-transform: uppercase;
 }
 
-.third p, .first p{
-    margin-top: 60px;
-}
-.fourth p {
-    margin-top: 80px;
-}
-#service h3, #present h3{
-    width: 100%;
-    height: 55px;
-    background-color: var(--blue);
-    color: white;
-    text-align: center;
-}
 
 p{
     font-size: 13pt;
@@ -123,37 +145,85 @@ p{
 
 	.img1{
 		width: 100%;
-		height: 55vh;
+		height: 65vh;
 	}
 	div .mots{
-		position: absolute;
-		font-size: 22px;
-		font-weight: 600;
-		color: var(--blanck);
-		margin: -220px 20px;
 
 	}
-
-    #accueil, #service, #present, #infos{
-        display: block;
+    /* annimation du test img */
+    div .mots{
+        position: absolute;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--blanck);
+        margin: -320px 20px;
+        animation-duration: 3s;
+        animation-name: stephane;
+        animation-iteration-count: 1;
     }
-    
-    .second, .fourth,.third, .first{
+    @keyframes stephane{
+        from{
+            margin-top: -1000px;
+            
+        }
+        to{
+             margin-top: -320px;
+            
+        
+        }
+    }
+    .btn1{ 
+        cursor:pointer;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        margin: 250px -90%;
+        background-color: transparent;
+        color: var(--blanck);
+        border-radius: 25px;
+        font-size: 22px;
+        padding: 15px;
+        border: solid 2px var(--blanck);
+
+    }
+    .btn1:hover{
+        background-color: var(--blue);
+        color: var(--blanck);
+        border: none;
+        padding: 15px;
+
+    }
+
+    .content{
         display: block;
         width: 90%;
-        background-color:var(--blue2);
     }
-    .second img, .fourth img,.third img, .zoom img{
-        margin: 0;
+    .txt{
+        background-color: var(--blanck);
+        box-shadow:15px 12px 13px 12px var(--blue2) ;
+        border-radius: 15px;
         width: 100%;
-        height: 60vh;
-        border-radius: 10px
+        padding:0px 20px;
+    }
+    .contentImages{
+        width: 100%;
+    }
+    .zoom img{
+         width: 100%;
+        height: 65vh;
     }
     .txt p{
+        margin-top: 2%;
         width: 100%;
         text-align: justify;
-        margin: 40px -15px;
     }
+
+    p img{
+        width: 5%;
+        height: 5%;
+        margin: -5px 2px -8px 0px;
+    }
+    
     h3{
         color: dodgerblue;
         text-align: center;
@@ -169,10 +239,10 @@ p{
     .fourth p {
         margin-top: 80px;
     }
-    #service h3, #present h3,#accueil h3{
-        width: 100%;
+    .container h3{
+        width: 90%;
         padding: 20px;
-        font-size: 22px;
+        font-size: 20px;
         background-color: var(--blue);
         color: white;
         text-align: center;
@@ -198,7 +268,172 @@ p{
     .locdiv{
         margin: 200px 0px;
         border-radius: 10px
-        width:50%;
+        width:100%;
+        height: 40vh;
+    }
+    .icons p{
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .zoom img{
+        transform: scale(1);
+        transition:all 1s ease-in-out;
+    }
+    .zoom:hover img{
+        transform: scale(1.5);
+    }
+    div .zoom{
+        overflow: hidden;
+        border-radius: 13px;
+        
+    }
+
+}
+
+
+
+
+@media all and (max-width: 400px){
+
+    .img1{
+        width: 100%;
+        height: 55vh;
+    }
+
+    div .mots{
+        position: absolute;
+        font-size: 6vw;
+        font-weight: 600;
+        color: var(--blanck);
+        margin: -340px 20px;
+        animation-duration: 3s;
+        animation-name: stephane;
+        animation-iteration-count: 1;
+    }
+    @keyframes stephane{
+        from{
+            margin-top: -1000px;
+            
+        }
+        to{
+             margin-top: -340px;
+            
+        
+        }
+    }
+    section{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .content{
+        display: block;
+        width: 100%;
+    }
+    .txt{
+        background-color: var(--blanck);
+        box-shadow:15px 12px 13px 12px var(--blue2) ;
+        border-radius: 15px;
+        width: 100%;
+        padding:0px 20px;
+    }
+    .contentImages{
+        width: 90%;
+    }
+
+    .zoom{
+        margin-left: -20px;
+    }
+    .zoom img{
+         width: 100%;
+        height: 55vh;
+    }
+    .txt p{
+        margin: 2% 0;
+        width: 90%;
+        height: 100%;
+        font-size:3.8vw;
+        text-align: justify;
+    }
+
+    p img{
+        width: 5%;
+        height: 5%;
+        margin: -5px 2px -2px 0px;
+    }
+    .service img{
+
+        width: 25%;
+        height: 25%;
+        margin: 15px 30%;
+    }
+    .btn1{ 
+        cursor:pointer;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        margin: 200px -92%;
+        background-color: transparent;
+        color: var(--blanck);
+        border-radius: 25px;
+        font-size: 6vw;
+        border: solid 2px var(--blanck);
+        padding: 10px;
+
+    }
+    .btn1:hover{
+        background-color: var(--blue);
+        color: var(--blanck);
+        border: none;
+        padding: 15px;
+
+    }
+    h3{
+        color: dodgerblue;
+        text-align: center;
+        font-family: Merienda;
+        font-weight: bold;
+        font-size: 20pt;
+        text-transform: uppercase;
+    }
+
+    .container h3{
+        width: 90%;
+        padding: 20px;
+        font-size: 4.8vw;
+        background-color: var(--blue);
+        color: white;
+        text-align: center;
+    }
+
+    p{
+        font-size: 11pt;
+        font-family: Meri;
+    }
+    .localisation{
+        display: block;
+        background: var(--blue2);
+    }
+    #mapDiv{
+        border-radius: 10px
+        width: 100%;
+        height: 50vh;
+        border: 1px solid #efefef;
+        margin: auto;
+        -moz-box-shadow: 5px 5px 10px #000;
+        -webkit-box-shadow: 5px 5px 10px #000;
+    }
+    .locdiv{
+        margin: 200px 0px;
+        border-radius: 10px
+        width:100%;
         height: 40vh;
     }
     .icons p{

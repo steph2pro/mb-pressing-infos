@@ -93,6 +93,9 @@ input::placeholder,textarea::placeholder{
 	.formulaire,.icons{
 		width: 100%;
 	}
+	.icons p{
+		text-align: left;
+	}
 	.formulaire p input{
 		padding: 15px;
 		width: 100%;
@@ -121,6 +124,80 @@ input::placeholder,textarea::placeholder{
 		border: none;
 		font-weight: bold;
 		margin: 1px 30%;
+		padding: 12px 70px;
+		margin-bottom: 10px;
+	}
+
+	.attention,.success, .erreur{
+		margin: 10px 0px;
+		color: var(--blanck);
+		border-radius: 5px;
+		padding: 15px;
+		text-align: center;
+		font-size: 17px;
+		display: none;
+
+	}
+
+	.attention{
+		background: var(--att);
+	}
+	.success{
+		background: var(--suc);
+	}
+	.erreur{
+		background: var(--err);
+	}
+
+}
+
+@media all and (max-width: 400px){
+
+	.footer{
+	
+		padding: 10px 50px;
+		padding-left: 20px;
+		display: block;
+	}
+	.formulaire h2,.icons h2{
+		margin: 0 30%;
+		margin-top: 10%;
+		font-size: 25px;
+		width: 100%;
+		font-weight: bold;
+		color: var(--blue);
+	}
+	.formulaire,.icons{
+		width: 100%;
+	}
+	.formulaire p input{
+		padding: 10px;
+		width: 108%;
+		border-radius: 5px;
+		border: none;
+		background: var(--blue2);
+
+	}
+	input::placeholder,textarea::placeholder{
+		font-size: 15px;
+		color: var(--blue);
+
+	}
+	.formulaire p textarea{
+		padding: 25px;
+		width: 95.5%;
+		height: 10vh;
+		border-radius: 5px;
+		border: none;
+		background: var(--blue2);
+	}
+	#btn{
+		font-size: 4.5vw;
+		color: var(--blanck);
+		background: var(--blue);
+		border: none;
+		font-weight: bold;
+		margin: 1px 18%;
 		padding: 12px 70px;
 		margin-bottom: 10px;
 	}

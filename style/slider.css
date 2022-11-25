@@ -19,7 +19,7 @@
 .slider .active{
 	opacity: 1;
 }
-.suivant,.precedent{
+	.suivant,.precedent{
 	color: var(--blanck);
 	font-size: 3rem;
 	position: absolute;
@@ -32,4 +32,12 @@
 }
 .suivant:hover,.precedent:hover{
 	cursor: pointer;
+}
+
+@media all and (max-width: 550px){
+
+	.suivant,.precedent{
+		display: none;
+	}
+
 }
