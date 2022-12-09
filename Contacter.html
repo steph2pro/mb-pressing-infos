@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MB-Pressing</title>
+
+
 	<link rel="stylesheet" type="text/css" href="./style/menu.css">
-	<link rel="stylesheet" type="text/css" href="./style/footer.css">
 	<link rel="stylesheet" type="text/css" href="./style/section.css">
 	<link rel="stylesheet" type="text/css" href="./style/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
 
-	
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
-	<script type="text/javascript" src="./script/slider.js" defer></script>
-	<script type="text/javascript" src="./script/menu.js" defer></script>
-	<script type="text/javascript" src="./script/app.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin="" defer></script>
+    <script src="./script/map2.js" defer></script>
 </head>
 <body>
 	<!--MENUE !-->
@@ -26,61 +33,51 @@
 		<a href="contacter.html"><ion-icon name="call"></ion-icon>contact</a>
 		<a href="login.php"><ion-icon name="boat-outline"></ion-icon> Espace Admin</a>
 	</nav>
+
 	<section>
 		<div>
 			<img src="./images/img1.jpg" class="img1">
 			<h2 class="mots">
 				Notre tel:<br>
-				<b>
-					<ion-icon name="call"></ion-icon>
-					+237 656429360
+				<b><a href="tel:656429360">
+                        <ion-icon name="call"></ion-icon>
+                       +237 656429360
+                    </a>
 				</b>
 
 			</h2>
 		</div>
-
-		
+	<div class="body">
+	
+    <div class="wrapper">
+        <div class="contact">
+            <h1>Nous contacter</h1>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <a href="tel:656429360">
+                        <ion-icon name="call"></ion-icon>
+                       +237 656429360
+                    </a>
+            
+                </div>
+                <div class="contact-item">
+                    <a href="https://wa.me/237656429360?text=bienvenue%20a%20MB%20pressing"><ion-icon name="logo-whatsapp"></ion-icon>237 656429360</a>
+            
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:stephane2004kamga@gmail.com">
+                        <ion-icon name="mail-unread"></ion-icon>
+                        stephane2004kamga@gmail.com
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    </div>
     </section>
-    <footer>
-		<div class="footer">
-			
-			
-			<div class="formulaire">
-				<h2>contactez nous!</h2>
-				<form action="#" method="POST">
-					
-				
-				<p>
-					<input type="text" placeholder="votre email" name="email" id="email">
-				</p>
-				<p>
-					<input type="text" placeholder="sujet" name="sujet" id="sujet">
-				</p>
-				<p>
-					<textarea placeholder="message" id="message" name="message"></textarea>
-				</p>
-				<p>
-					<button id="btn">envoyer</button>
-				</p>
-				<div class="attention">veuillez entrer tout les champs</div>
-				<div class="success">votre message a ete envoyer avec success!</div>
-				<div class="erreur">une erreur est survenue l'ors de l'envoie de votre message</div>
-			</form>
-			</div>
-			<div class="icons">
-				<h2>rejoignez nous!</h2>
-				<p><ion-icon name="heart-outline logo-faceboock"></ion-icon> facebock</p>
-				<p><ion-icon name="logo-whatsapp"></ion-icon>whatsapp</p>
-				<p><ion-icon name="logo-twitter"></ion-icon>twiter</p>
-			</div>
-		</div>
-		<div class="locdiv" style="margin-top: -3%">
-			<!--****************** integration de la carte du cameroun de google maps ****************************!-->
-
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8103859.369621319!2d7.7960158168310425!3d7.358091127226029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613753703e0f21%3A0x2b03c44599829b53!2sCameroun!5e0!3m2!1sfr!2scm!4v1660077801862!5m2!1sfr!2scm" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-         	</div>
-	</footer>
-
 </body>
+
 </html>
+

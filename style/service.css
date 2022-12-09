@@ -7,81 +7,218 @@
 	--suc:deepskyblue;
 	--err:tomato;
 }
-
-@media all and (max-width: 550px){
-
-
-	.txt{
+.im{
+    width: 100%;
+    height: 85vh;
+}
+.grand-service{
+    display: flex;
+}
+    .txt{
         background-color: var(--blanck);
         box-shadow:15px 12px 13px 12px var(--blue2) ;
         border-radius: 15px;
         width: 100%;
         padding:0px -20px;
+        text-align: center;
     }
     #service{
-    	margin-top: 25%;
+        font-size: 18px;
+        margin: 2% 1%;
+        width: 50%;
     }
     .contentImages{
-    	margin-left: -25px;
+        margin-left: -25px;
     }
-    #service h3{
-        width: 90%;
+   h3{
+        margin-top: 10%;
+        width: 100%;
         padding: 20px;
-        font-size: 20px;
+        font-size: 30px;
         background-color: var(--blue);
         color: white;
         text-align: center;
     }
+    .content{
+        width: 100%;
+    }
     .mat{
-    	font-size: 22px;
-    	color: var(--blue);
-    	font-weight: 600;
-    	margin: 30px 20px;
+        font-size: 22px;
+        color: var(--blue);
+        font-weight: 600;
+        margin: 30px 20px;
 
     }
     iframe{
-    	width: 100%;
-    	height: 200%;
+        width: 100%;
+        height: 200%;
+    }
+    .icons p{
+        text-align: center;
+        text-transform: capitalize;
     }
 
+@media all and (max-width:750px){
+
+    section{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+	
+    .im{
+        width: 100%;
+        height: 75vh;
+    }
+    .grand-service{
+        display: block;
+    }
+    .txt{
+        background-color: var(--blanck);
+        box-shadow:15px 12px 13px 12px var(--blue2) ;
+        border-radius: 15px;
+        width: 100%;
+        padding:0px -20px;
+        text-align: center;
+    }
+    #service{
+        font-size: 18px;
+        margin: 2% 1%;
+        width: 100%;
+    }
+    .contentImages{
+        margin-left: -25px;
+    }
+   h3{
+        margin-top:20%;
+        width: 100%;
+        padding: 20px;
+        font-size: 25px;
+        background-color: var(--blue);
+        color: white;
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+    }
+    .mat{
+        font-size: 20px;
+        color: var(--blue);
+        font-weight: 600;
+        margin: 30px 20px;
+
+    }
+    /*effet de zomm sur l'image*/
+    .zoom img{
+        transform: scale(1);
+        transition:all 1s ease-in-out;
+    }
+    .zoom:hover img{
+        transform: scale(1.5);
+    }
+    div .zoom{
+        overflow: hidden;
+        border-radius: 13px;
+        
+    }
+    .icons p{
+        font-size: 20px;
+        margin: 2px 40%;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+    }
 }
 
 
 @media all and (max-width: 400px){
 
+    section{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
 
+    footer{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .im{
+        width: 100%;
+        height: 65vh;
+    }
+    .grand-service{
+        display: block;
+    }
     .txt{
         background-color: var(--blanck);
         box-shadow:15px 12px 13px 12px var(--blue2) ;
         border-radius: 15px;
-        width: 90%;
+        width: 100%;
         padding:0px -20px;
+        text-align: center;
     }
     #service{
-        margin-top: 30%;
+        font-size: 18px;
+        margin: 2% 1%;
+        width: 100%;
+    }
+    .service img{
+        width: 14%;
+        height: 15%;
+    }
+    .zoom img{
+         width: 100%;
+        height:50vh;
+    }
+
+    /*effet de zomm sur l'image*/
+    .zoom img{
+        transform: scale(1);
+        transition:all 1s ease-in-out;
+    }
+    .zoom:hover img{
+        transform: scale(1.5);
+    }
+    div .zoom{
+        overflow: hidden;
+        border-radius: 13px;
+        
     }
     .contentImages{
         margin-left: -25px;
     }
-    #service h3{
-        width: 90%;
+   h3{
+        margin-top: 20%;
+        width: 100%;
         padding: 20px;
         font-size: 20px;
         background-color: var(--blue);
         color: white;
         text-align: center;
     }
+    .content{
+        width: 100%;
+    }
     .mat{
-        font-size:5.5vw;
+        font-size: 22px;
         color: var(--blue);
         font-weight: 600;
         margin: 30px 20px;
-        display: block;
 
     }
-    iframe{
-        width: 100%;
-        height: 170%;
+    .icons p{
+        text-align: center;
+        text-transform: capitalize;
     }
 
 }

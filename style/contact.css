@@ -7,27 +7,112 @@
 	--suc:deepskyblue;
 	--err:tomato;
 }
-iframe{
-    margin-top: 5%;
-    width: 100%;
-    height: 200%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+.body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   /*background-image: linear-gradient(to right,#43e97b,#38f9d7,100%);*/
+    display: flex;
+}
+a,a:visited,a:active{
+    text-decoration: none;
+    color: var(--blanck);
+}
+a:hover{
+    text-decoration: underline;
+}
+.wrapper{
+    width: 75%;
+    max-width: 1000px;
+    background-color: #313131;
+    box-shadow: 0 0 15px rgb(0, 0,0.3);
+    display: flex;
+}
+.contact{
+    padding: 30px 60px;
+    color: white;
+}
+h1{
+    margin-bottom: 60px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+.contact-item:not(:last-child){
+    margin-bottom: 30px;
+}
+ion-icon{
+    margin-right: 15px;
+}
+#map { 
+     height: 480px; 
+     flex: 1;
+    }
 
 
 @media all and (max-width: 550px){
 
 
-    .mat{
-    	font-size: 22px;
-    	color: var(--blue);
-    	font-weight: 600;
-    	margin: 30px 20px;
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .body{
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /*background-image: linear-gradient(to right,#43e97b,#38f9d7,100%);*/
+        display: block;
+    }
+    a,a:visited,a:active{
+        text-decoration: none;
+        color: var(--blanck);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 1000px;
+        background-color: #313131;
+        box-shadow: 0 0 15px rgb(0, 0,0.3);
+        display: block;
+    }
+    .contact{
+        padding: 30px 60px;
+        color: white;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+    .contact-item{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
 
     }
-    iframe{
-    	width: 100%;
-    	height: 200%;
+    .contact-item:not(:last-child){
+        margin-bottom: 20px;
     }
+    ion-icon{
+        margin-right: 5px;
+    }
+    #map { 
+         height: 480px; 
+         flex: 1;
+        }
+  
 
 }
 
@@ -35,17 +120,6 @@ iframe{
 @media all and (max-width: 400px){
 
 
-    .mat{
-        font-size:5.5vw;
-        color: var(--blue);
-        font-weight: 600;
-        margin: 30px 20px;
-        display: block;
-
-    }
-    iframe{
-        width: 100%;
-        height: 170%;
-    }
+   
 
 }
